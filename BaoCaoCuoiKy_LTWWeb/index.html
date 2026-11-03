@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nhịp — thời trang đương đại cho nhịp sống thành thị." />
+    <title>Nhịp — Modern essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main>
+      <section class="hero" id="hero" aria-label="Bộ sưu tập nổi bật">
+        <div class="slide active slide-one">
+          <div class="hero-copy">
+            <p class="eyebrow">01 / New season — 2024</p>
+            <h1>Đơn giản<br /><em>nhưng khác biệt.</em></h1>
+            <p class="hero-description">Những thiết kế vượt thời gian, được tạo nên cho nhịp sống hiện đại.</p>
+            <a href="Sanpham.html" class="btn btn-light">Khám phá bộ sưu tập <span>↗</span></a>
+          </div>
+          <div class="hero-note">Designed for<br />everyday living</div>
+        </div>
+        <div class="slide slide-two">
+          <div class="hero-copy">
+            <p class="eyebrow">02 / Essential wardrobe</p>
+            <h1>Chất liệu<br /><em>lên tiếng.</em></h1>
+            <p class="hero-description">Chạm vào sự thoải mái với những phom dáng được cân bằng hoàn hảo.</p>
+            <a href="Sanpham.html?cat=Áo" class="btn btn-light">Xem đồ mới <span>↗</span></a>
+          </div>
+          <div class="hero-note">Quiet luxury<br />since day one</div>
+        </div>
+        <div class="slide slide-three">
+          <div class="hero-copy">
+            <p class="eyebrow">03 / The edit</p>
+            <h1>Mặc điều<br /><em>bạn tin.</em></h1>
+            <p class="hero-description">Tự do tạo nên phong cách riêng với những món đồ bạn sẽ mặc mãi.</p>
+            <a href="Sanpham.html" class="btn btn-light">Mua sắm ngay <span>↗</span></a>
+          </div>
+          <div class="hero-note">Less noise.<br />More you.</div>
+        </div>
+        <button class="arrow prev" id="prev" aria-label="Slide trước">←</button>
+        <button class="arrow next" id="next" aria-label="Slide sau">→</button>
+        <div class="dots" id="dots"></div>
+      </section>
+
+      <section class="ticker" aria-label="Cam kết dịch vụ">
+        <span>FREESHIP ĐƠN TỪ 500K</span><i>✦</i><span>ĐỔI TRẢ TRONG 7 NGÀY</span><i>✦</i><span>THANH TOÁN AN TOÀN</span><i>✦</i><span>FREESHIP ĐƠN TỪ 500K</span>
+      </section>
+
+      <section class="section intro-section">
+        <div>
+          <p class="eyebrow dark">The Nhịp edit</p>
+          <h2>Mặc đẹp.<br /><em>Sống thật.</em></h2>
+        </div>
+        <p class="intro-text">Chúng tôi tin rằng thời trang tốt không cần phải ồn ào. Nhịp tạo ra những món đồ tinh giản, chất lượng và đủ linh hoạt để đi cùng bạn qua mọi khoảnh khắc.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow dark">Curated for you</p><h2>Khám phá theo phong cách</h2></div><a class="text-link" href="Sanpham.html">Xem tất cả <span>↗</span></a></div>
+        <div class="cats editorial-cats">
+          <a href="Sanpham.html?cat=Áo" class="cat cat-shirt"><span>01</span><strong>Áo</strong><small>Everyday layers</small></a>
+          <a href="Sanpham.html?cat=Quần" class="cat cat-pants"><span>02</span><strong>Quần</strong><small>Made to move</small></a>
+          <a href="Sanpham.html?cat=Giày" class="cat cat-shoes"><span>03</span><strong>Giày</strong><small>Walk your way</small></a>
+        </div>
+      </section>
+
+      <section class="section featured-section">
+        <div class="section-heading"><div><p class="eyebrow dark">Bestsellers</p><h2>Được yêu thích nhất</h2></div><a class="text-link" href="Sanpham.html">Tất cả sản phẩm <span>↗</span></a></div>
+        <div class="grid" id="featured"></div>
+      </section>
+
+      <section class="statement">
+        <p class="eyebrow">Our philosophy</p>
+        <h2>“Phong cách là cách<br /><em>bạn kể câu chuyện của mình.</em>”</h2>
+        <a href="Gioithieu.html" class="btn btn-outline">Về Nhịp <span>↗</span></a>
+      </section>
+
+      <section class="section newsletter">
+        <div><p class="eyebrow dark">Stay in the know</p><h2>Ở lại trong <em>nhịp.</em></h2><p>Nhận tin mới, ưu đãi riêng và những câu chuyện phía sau mỗi bộ sưu tập.</p></div>
+        <form id="newsForm"><input type="email" id="email" placeholder="Email của bạn" required /><button class="btn" type="submit">Đăng ký <span>↗</span></button><p id="newsMsg" role="status"></p></form>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

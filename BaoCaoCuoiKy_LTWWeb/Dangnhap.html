@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập - Nhịp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="login-page">
+      <section class="box login-box">
+        <p class="eyebrow dark">Welcome back</p>
+        <h1>Đăng nhập <em>Nhịp.</em></h1>
+        <p class="login-caption">
+          Đăng nhập để theo dõi đơn hàng và mua sắm nhanh hơn.
+        </p>
+        <form class="form" id="loginForm">
+          <label
+            >Email<input
+              id="loginEmail"
+              type="email"
+              placeholder="you@example.com"
+              required
+          /></label>
+          <label
+            >Mật khẩu<input
+              id="loginPassword"
+              type="password"
+              minlength="6"
+              placeholder="Ít nhất 6 ký tự"
+              required
+          /></label>
+          <button class="btn full" type="submit">
+            Đăng nhập <span>↗</span>
+          </button>
+          <p id="loginMsg" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

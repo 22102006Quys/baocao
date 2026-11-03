@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng - Nhịp Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <div class="page-title"><h1>Giỏ hàng</h1></div>
+    <section class="section cart-layout">
+      <div class="box">
+        <div id="cartPage"></div>
+        <div class="total" style="margin-top: 14px">
+          Tổng: <span id="cartTotal">0đ</span>
+        </div>
+      </div>
+      <form class="box form" id="orderForm">
+        <h3>Thông tin giao hàng</h3>
+        <label>Họ tên<input id="fullname" required /></label>
+        <label
+          >Số điện thoại<input
+            type="tel"
+            pattern="[0-9]{9,11}"
+            title="Nhập 9 đến 11 chữ số"
+            required
+        /></label>
+        <label>Địa chỉ<textarea rows="3" required></textarea></label>
+        <button class="btn full" type="submit">Đặt hàng</button>
+      </form>
+    </section>
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
